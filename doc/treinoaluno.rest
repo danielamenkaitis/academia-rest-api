@@ -1,0 +1,34 @@
+GET http://localhost:8000/academia/treinoaluno/v1/1
+
+
+###
+GET http://localhost:8000/academia/treinoaluno/v1
+
+###
+POST  http://localhost:8000/academia/treinoaluno/v1
+Content-Type: application/json
+
+{
+      "id": 3,
+      "idtreino": 2,
+      "idaluno": 9,
+      "datacadastro": "2025-11-15",
+      "ativo": "S",
+      "idusuario": 2
+    }
+
+###
+PUT  http://localhost:8000/academia/treinoaluno/v1/3
+Content-Type: application/json
+
+{
+      "id": 3,
+      "idtreino": 1,
+      "idaluno": 9,
+      "datacadastro": "2025-11-15",
+      "ativo": "S",
+      "idusuario": 2
+}
+
+###
+DELETE http://localhost:8000/academia/treinoaluno/v1/3 

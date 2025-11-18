@@ -1,0 +1,35 @@
+GET http://localhost:8000/academia/usuario/v1/1
+
+###
+GET http://localhost:8000/academia/usuario/v1
+
+###
+POST http://localhost:8000/academia/usuario/v1
+Content-Type: application/json
+
+{
+  "id": 0,
+  "usuario": "Julia_F",
+  "senha": "2025",
+  "tipo": "personal",
+  "datacadastro": "2025-11-14",
+  "ativo": "S",
+  "idusuario": 2
+}
+
+###
+PUT http://localhost:8000/academia/usuario/v1/5
+Content-Type: application/json
+
+{
+  "id": 5,
+  "usuario": "Julia_M",
+  "senha": "2025",
+  "tipo": "personal",
+  "datacadastro": "2025-11-14",
+  "ativo": "S",
+  "idusuario": 2
+}
+
+###
+DELETE http://localhost:8000/academia/usuario/v1/5

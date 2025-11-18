@@ -1,0 +1,33 @@
+GET http://localhost:8000/academia/treino/v1/1
+
+###
+GET http://localhost:8000/academia/treino/v1
+
+###
+POST http://localhost:8000/academia/treino/v1
+Content-Type: application/json
+
+{
+  "id": 0,
+  "treino": "Treino 2",
+  "instrucao": "MMSS/ Peitoral/ Bíceps/ Dorsais",
+  "datacadastro": "2025-11-15",
+  "ativo": "S",
+  "idusuario": 2
+}
+
+###
+PUT http://localhost:8000/academia/treino/v1/2
+Content-Type: application/json
+
+{
+    "id": 0,
+    "treino": "Treino 2",
+    "instrucao": "MMSS / Peitoral / Bíceps / Dorsais / Antebraços",
+    "datacadastro": "2025-11-15",
+    "ativo": "S",
+    "idusuario": 2
+}
+
+###
+DELETE http://localhost:8000/academia/treino/v1/2

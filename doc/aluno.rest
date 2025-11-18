@@ -1,0 +1,41 @@
+#find one
+GET http://localhost:8000/academia/aluno/v1/1
+
+### find all
+GET http://localhost:8000/academia/aluno/v1
+
+
+###Envia dados para servidor criar algo
+POST http://localhost:8000/academia/aluno/v1/
+Content-Type: application/json
+
+{
+  "id": 0,
+  "nome": "Fagundes Fernandes",
+  "email": "email@email1.com",
+  "whatsapp": "1190900-0000",
+  "observacao": "Sem restrição",
+  "datacadastro": "2025-11-13",
+  "ativo": "S",
+  "idusuario": 2
+}
+
+
+### Modifica dados antigos pelos novos - PRECISA COLOCAR O ID NO FINAL DO HTTP
+PUT http://localhost:8000/academia/aluno/v1/10
+Content-Type: application/json
+
+{
+  "id": 10,
+  "nome": "Jorge Fernandes",
+  "email": "j.fernandes@email.com",
+  "whatsapp": "1190900-0000",
+  "observacao": "Sem restrição",
+  "datacadastro": "2025-11-13",
+  "ativo": "S",
+  "idusuario": 2
+
+}
+
+###Remove dados servidor (DB) - PRECISA COLOCAR O ID NO FINAL DO HTTP
+DELETE http://localhost:8000/academia/aluno/v1/10

@@ -1,0 +1,35 @@
+GET http://localhost:8000/academia/exercicio/v1/1
+
+###
+GET http://localhost:8000/academia/exercicio/v1
+
+###
+POST http://localhost:8000/academia/exercicio/v1
+Content-Type: application/json
+
+{
+  "id": 0,
+  "nomeexercicio": "Rosca Martelo",
+  "instrucao": "4x15 repetições cada lado com carga adaptada, descanso de 2 minutos em cada série",
+  "url": "https://www.youtube.com/shorts/zjYiIf93ZBc?t=3&feature=share",
+  "datacadastro": "2025-11-14",
+  "ativo": "S",
+  "idusuario": 2
+}
+
+###
+PUT http://localhost:8000/academia/exercicio/v1/5
+Content-Type: application/json
+
+{
+  "id": 5,
+  "nomeexercicio": "Agachamento Búlgaro",
+  "instrucao": "3x8 e 1x16 com carga adaptada, descanso de 2 minutos em cada série",
+  "url": "https://www.youtube.com/shorts/dcaQAVRtRk8?t=3&feature=share",
+  "datacadastro": "2025-11-14",
+  "ativo": "S",
+  "idusuario": 2
+}
+
+###
+DELETE http://localhost:8000/academia/exercicio/v1/4

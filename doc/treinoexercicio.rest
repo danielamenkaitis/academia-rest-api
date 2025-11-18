@@ -1,0 +1,33 @@
+GET http://localhost:8000/academia/treinoexercicio/v1/1
+
+###
+GET http://localhost:8000/academia/treinoexercicio/v1
+
+###
+POST http://localhost:8000/academia/treinoexercicio/v1
+Content-Type: application/json
+
+{
+      "id": 2,
+      "idtreino": 1,
+      "idexercicio": 1,
+      "datacadastro": "2025-11-15",
+      "ativo": "S",
+      "idusuario": 2
+}
+
+###
+PUT http://localhost:8000/academia/treinoexercicio/v1/2
+Content-Type: application/json
+
+{
+      "id": 2,
+      "idtreino": 2,
+      "idexercicio": 1,
+      "datacadastro": "2025-11-15",
+      "ativo": "S",
+      "idusuario": 2
+}
+
+###
+DELETE http://localhost:8000/academia/treinoexercicio/v1/2
